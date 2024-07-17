@@ -19,8 +19,11 @@ services:
       postgres_pass: let-me-in
       postgres_db: graph-node
       ipfs: 'ipfs:5001'
-      ethereum: 'mainnet:http://host.docker.internal:8545'
-      GRAPH_LOG: info
+      ethereum: 'mevm:https://mevm.devnet.m1.movementlabs.xyz'
+      GRAPH_LOG: info, error
+      ETHEREUM_REORG_THRESHOLD: 1
+      ETHEREUM_ANCESTOR_COUNT: 1
+      ETHEREUM_BLOCK_BATCH_SIZE: 10
   ipfs:
     image: ipfs/kubo:v0.17.0
     ports:
