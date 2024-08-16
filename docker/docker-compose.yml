@@ -19,7 +19,7 @@ services:
       postgres_pass: let-me-in
       postgres_db: graph-node
       ipfs: 'ipfs:5001'
-      ethereum: 'mevm:https://mevm.devnet.imola.movementlabs.xyz'
+      ethereum: 'mevm:https://mevm2.devnet.imola.movementnetwork.xyz'
       GRAPH_LOG: info, error
       ETHEREUM_REORG_THRESHOLD: 1
       ETHEREUM_ANCESTOR_COUNT: 1
