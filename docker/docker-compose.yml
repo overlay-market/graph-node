@@ -20,7 +20,7 @@ services:
       postgres_db: graph-node
       ipfs: 'ipfs:5001'
       ethereum: 'mevm:https://mevm4.devnet.imola.movementnetwork.xyz'
-      GRAPH_LOG: info, error
+      GRAPH_LOG: debug
       ETHEREUM_REORG_THRESHOLD: 10
       ETHEREUM_POLLING_INTERVAL: 50
       ETHEREUM_BLOCK_BATCH_SIZE: 50
