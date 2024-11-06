@@ -20,7 +20,7 @@ services:
       postgres_db: graph-node
       ipfs: 'ipfs:5001'
       ethereum: 'mevm:https://overlay-rpc.devnet.imola.movementnetwork.xyz'
-      GRAPH_LOG: debug
+      GRAPH_LOG: trace
       ETHEREUM_REORG_THRESHOLD: 10
       ETHEREUM_POLLING_INTERVAL: 500
       ETHEREUM_BLOCK_BATCH_SIZE: 50
@@ -59,4 +59,3 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
-    
